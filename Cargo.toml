@@ -1,0 +1,15 @@
+[package]
+name = "rust-benchmark"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["macros", "time", "rt-multi-thread"] }
+redis = { version = "^0.23", features = ["aio", "tokio-comp", "tls", "tokio-rustls-comp", "connection-manager", "cluster-async"] }
+futures = "0.3.28"
+rand = "0.8.5"
+stopwatch = "0.0.7"
+itoa = "1.0.6"
+futures-time = "^3.0.0"
